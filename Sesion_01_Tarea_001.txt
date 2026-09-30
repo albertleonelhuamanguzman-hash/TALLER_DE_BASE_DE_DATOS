@@ -1,0 +1,33 @@
+CREATE DATABASE 
+  `Albert Huaman` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- Seleccionar la base de datos
+USE `Albert Huaman`;
+
+-- Crear la primera tabla para los deportes
+CREATE TABLE Deportes (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  deporte VARCHAR(100) NOT NULL
+);
+
+-- Insertar los registros de deportes
+INSERT INTO Deportes (deporte) VALUES 
+  ('fútbol'),
+  ('básquet'),
+  ('vóley'),
+  ('natación'),
+  ('atletismo');
+
+-- Crear la segunda tabla para las películas
+CREATE TABLE `Películas favoritas` (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  pelicula VARCHAR(100) NOT NULL
+);
+
+-- Insertar los registros de películas favoritas
+INSERT INTO `Películas favoritas` (pelicula) VALUES 
+  ('Interestelar'),
+  ('El Padrino'),
+  ('Inception'),
+  ('Gladiador'),
+  ('Coco');
